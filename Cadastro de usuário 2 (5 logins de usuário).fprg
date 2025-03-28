@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calculadora de formas geometrica"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-28 01:49:13 "/>
+        <attribute name="created" value="QWx1bm87VVBMMi0wN0E7MjAyNS0wMi0yMTsiMDc6NDU6MDMgIjsyMjAz"/>
+        <attribute name="edited" value="QWx1bm87VVBMMi0wN0E7MjAyNS0wMi0yODsiMDE6NDk6MTMgIjs4OzIzMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="repeticao" type="Integer" array="False" size=""/>
+            <for variable="repeticao" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;cadastro de usu&#225;rio&quot; &amp; &quot; &quot; &amp; &quot; &quot; &amp; repeticao" newline="True"/>
+                <output expression="&quot;Ol&#225;! Seja bem-vindo ao sistemas de cadastro de usu&#225;rios&quot;" newline="True"/>
+                <output expression="&quot;Por favor digite seu primeiro nome&quot;" newline="True"/>
+                <declare name="armnomes" type="String" array="False" size=""/>
+                <input variable="armnomes"/>
+                <output expression="&quot;O primeiro nome digitado foi:&quot; &amp; armnomes" newline="True"/>
+                <output expression="&quot;Agora,digite seu sobrenome&quot;" newline="True"/>
+                <declare name="armsobrenomes" type="String" array="False" size=""/>
+                <input variable="armsobrenomes"/>
+                <output expression="&quot;o sobrenome digitado foi:&quot; &amp; armsobrenomes" newline="True"/>
+                <output expression="&quot;Em seguida, coloque o seu CPF&quot;" newline="True"/>
+                <declare name="armCPF" type="String" array="False" size=""/>
+                <input variable="armCPF"/>
+                <output expression="&quot;O seu CPF digitado foi:&quot; &amp; armCPF" newline="True"/>
+                <output expression="&quot;&#211;timo&quot;" newline="True"/>
+                <output expression="&quot;Agora, digite sua idade, por favor&quot;" newline="True"/>
+                <declare name="armidade" type="String" array="False" size=""/>
+                <input variable="armidade"/>
+                <output expression="&quot;Sua idade colocada foi:&quot; &amp; armidade" newline="True"/>
+                <output expression="&quot;Em seguida para finalizar, coloque seu endere&#231;o&quot;" newline="True"/>
+                <declare name="armendere&#231;o" type="String" array="False" size=""/>
+                <input variable="armendere&#231;o"/>
+                <output expression="&quot;Seu endere&#231;o foi:&quot; &amp; armendere&#231;o" newline="True"/>
+                <output expression="&quot;Voc&#234; tem telefone fixo? Responda sim ou n&#227;o&quot;" newline="True"/>
+                <declare name="decisao" type="String" array="False" size=""/>
+                <input variable="decisao"/>
+                <if expression="decisao==&quot;sim&quot;">
+                    <then>
+                        <output expression="&quot;Digite seu n&#250;mero&quot;" newline="True"/>
+                        <declare name="armnumero" type="String" array="False" size=""/>
+                        <input variable="armnumero"/>
+                        <output expression="&quot;Cadastro completo telefone:&quot; &amp; armnumero" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Nome completo:&quot; &amp; armnomes &amp; &quot; &quot; &amp; armsobrenomes &amp; &quot; &quot; &amp; &quot; &quot; &amp; &quot;CPF:&quot; &amp; armCPF &amp; &quot; &quot; &amp; &quot; &quot; &amp; &quot;Idade:&quot; &amp; armidade &amp; &quot; &quot; &amp; &quot; &quot; &amp; &quot;Endere&#231;o:&quot; &amp; armendere&#231;o" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
